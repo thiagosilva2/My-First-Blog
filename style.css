@@ -19,6 +19,7 @@
 
 html,body{
   height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -126,10 +127,10 @@ p {
 /* BOX CAPTURA*/
 section.box__captura {
 height:  212px;
-/* background-color: #20584E; */
 padding: 2px;
 padding-top: 50px;
 margin-bottom: 50px;
+
 }
 
 .left__ingles {
@@ -137,7 +138,6 @@ margin-bottom: 50px;
   height: 100%;
   /* background-color: rgb(196, 179, 34); */
   width: 90%;
-  
 }
 
 
@@ -147,8 +147,7 @@ section.content {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5em;
   place-items: center;
-  /* background-color: black; */
-  
+  background-color: #F0F1ED;
 }
 
 .post {
@@ -156,7 +155,7 @@ section.content {
   height: 100%;
   /* background-color: #00A6ED ; */
   width: 105%;
-  border-radius: 10px;
+ 
 }
   
 figure img {
@@ -171,7 +170,6 @@ div.sidebar {
   height: 100%;
   /* background-color: purple; */
   width: 90%;
-  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -187,7 +185,29 @@ footer p {
 
 .logo__facebook {
   margin-top: 5px;
-  width: 15px;
+  width: 25px;
   margin-right: 1px;
+}
+
+.logo__instagram a {
+margin: 25px;
+}
+
+
+.logo__instagram img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.linkedin img {
+width: 25px;
+}
+
+.repositorio__github img {
+  width: 25px;
+}
+
+a img {
+  margin-top: 15px;
 }
 
