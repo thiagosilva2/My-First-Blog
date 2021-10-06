@@ -14,109 +14,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans' , serif;
+  font-family: 'Poppins' , serif;
 }
 
-html,body{
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
+
+main {
+  margin: auto;
 }
 
-.container {
-  max-width: 1280px;
+
+/* ==== HEADER ======== */
+.header {
+  width: 79.8rem;
+}
+
+header {
+  padding: 20px 20%;
+  background-color: #FF773D;
   margin: 0 auto;
 }
 
- /* .clear {  /*classe para limpar flutuações */
-  /* clear: both;  }  */
-
-/* .left {
-  float: left;
-}
-.right {
-  float: right;
-} */
-
-/* ==== HEADER ======== */
-#container {
-  padding: 20px 20%;
-  background-color: #FF773D;
+.logo {
+  margin: 0 auto;
 }
 
- header.logo h2{
-    /* background-color: blue; */
-    color: royalblue;
-    cursor: pointer;
-    font-size: 35px;
-}
+
 
 div.logo img {
   width: 30%;
-}
-header .menu ul {
-list-style: none;
-}
-
-header .menu ul li {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 13px;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.menu {
-  position: absolute;
-  right: 0rem;
-  top: 1rem;
-}
-
-header .menu ul li:not(.not) {
-  border: 0.5px solid rgb(120, 120, 120);
-}
-
-header .menu ul li:not(.not):hover {
-  background-color: skyblue;
-}
-
-header .menu ul li:not(.not):hover a{
-color: white;
-}
-header .menu ul li input[type=text] {
-  padding: 4px 2%;
-  width: 110px;
-  border-radius: 4px;
-  margin-right: 5px;
-}
-
-header .menu ul li i {
-  border: 0.5px solid rgb(120, 120, 120);
-  width: 20px;
-  padding: 5px;
-  border-radius: 4px;
-}
-
-header .menu ul li i:hover {
-  background-color: skyblue;
-  color: white;
-}
-
-header .menu ul li a {
-  text-decoration: none;
-  color: rgb(120, 120, 120);
 
 }
 
-h1 {
+
+.titulo {
   text-align: center; 
-  font-size: 17pt;
+  font-size: 17pt
+}
 
-}
-h2 {
-  text-align: center; 
-  font-size: 14pt;
- 
-}
 p {
   text-indent: 7%;
   text-align: justify;
@@ -125,64 +59,69 @@ p {
 
 
 /* BOX CAPTURA*/
-section.box__captura {
-height:  212px;
-padding: 2px;
-padding-top: 50px;
-margin-bottom: 50px;
 
+
+#esconder {
+  text-align: center;
+  /* margin: 0 10em; */
+  margin: 0 auto;
 }
 
-.left__ingles {
-  padding: 3rem;
-  height: 100%;
-  /* background-color: rgb(196, 179, 34); */
-  width: 90%;
+#conteudo_trajetoria {
+  padding: 10px 20px 10px 10px;
+  }
+
+/* =====================PAI DAS DIV'S========= */
+  #conteudo_artigos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+    place-items: center;
+    background-color: #F0F1ED;
+    
+  }
+  
+  #conteudo_artigos div {
+    
+  }
+/* ================ AS 3 DIV'S INGLES/TECNOLOGIA/
+EMPRESARIO=========== */
+/* ========= MEXER AQUI */
+.conteudo__ingles {
+  position: relative;
+  bottom: 5%;
+  padding: 4px;
+}
+
+.conteudo_tecnologia {
+  position: relative;
+  top: 5%;
+}
+.conteudo__empresario {
+  position: relative;
+  bottom: 20%;
+  padding: 4px;
 }
 
 
-/* CONTENT  */
-section.content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5em;
-  place-items: center;
-  background-color: #F0F1ED;
-}
+/* ================ AS 3 DIV'S INGLES/TECNOLOGIA/EMPRESARIO=========== */
 
-.post {
-  padding: 3rem;
-  height: 100%;
-  /* background-color: #00A6ED ; */
-  width: 105%;
- 
-}
+
   
 figure img {
   width: 100%;
 }
+
 img.figure  {
 place-items: center;
 }
-
-div.sidebar {
+/* 
+.conteudo__empresario{
   padding: 3rem;
-  height: 100%;
-  /* background-color: purple; */
-  width: 90%;
-}
+} */
 
-/* FOOTER */
 
-footer {
-  height: 10%;
-  background-color: #D3D2C7;
-}
-
-footer p {
-  text-align: center;
-}
-
+/* ======================== LOGO DAS REDES SOCIAIS ===== */
 .logo__facebook {
   margin-top: 5px;
   width: 25px;
@@ -206,8 +145,29 @@ width: 25px;
 .repositorio__github img {
   width: 25px;
 }
+/* ======================== LOGO DAS REDES SOCIAIS ===== */
 
-a img {
-  margin-top: 15px;
+
+
+/* FOOTER  RODAPÉ */
+
+footer {
+  height: 10%;
+  background-color: #D3D2C7;
 }
+
+footer p {
+  text-align: center;
+}
+
+/* =========== MEDIA QUERY (DEIXANDO RESPONSIVO)======== */
+
+@media screen and (max-width: 480px){
+  #conteudo_artigos {
+   display: block;
+}
+}
+
+ 
+
 
