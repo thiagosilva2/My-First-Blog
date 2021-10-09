@@ -24,51 +24,28 @@ main {
 
 
 /* ==== HEADER ======== */
-.header {
-  width: 79.8rem;
-}
-
-header {
+.header .container {
   padding: 20px 20%;
   background-color: #FF773D;
   margin: 0 auto;
+  
 }
-
-.logo {
-  margin: 0 auto;
-}
-
-
-
-div.logo img {
-  width: 30%;
-
-}
-
 
 .titulo {
   text-align: center; 
-  font-size: 17pt
+  font-size: 21px
 }
 
 p {
-  text-indent: 7%;
+  text-indent: 20px;
   text-align: justify;
-  padding: 0.3rem;
+  padding-bottom: 13px;
 }
 
-
-/* BOX CAPTURA*/
-
-
-#esconder {
-  text-align: center;
-  /* margin: 0 10em; */
-  margin: 0 auto;
-}
 
 #conteudo_trajetoria {
   padding: 10px 20px 10px 10px;
+  position: relative;
   }
 
 /* =====================PAI DAS DIV'S========= */
@@ -78,29 +55,31 @@ p {
     gap: 0.5em;
     place-items: center;
     background-color: #F0F1ED;
-    
   }
-  
-  #conteudo_artigos div {
-    
+
+  #conteudo_artigos {
+    min-height: 980px;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 12px;
+
   }
 /* ================ AS 3 DIV'S INGLES/TECNOLOGIA/
 EMPRESARIO=========== */
 /* ========= MEXER AQUI */
 .conteudo__ingles {
-  position: relative;
-  bottom: 5%;
+  /* position: relative; */
   padding: 4px;
+  font-size: 15pt;
 }
 
 .conteudo_tecnologia {
-  position: relative;
-  top: 5%;
+  /* position: relative; */
+ top: 1rem;
 }
 .conteudo__empresario {
-  position: relative;
-  bottom: 20%;
-  padding: 4px;
+  /* position: relative; */
+   padding: 4px;
 }
 
 
@@ -120,22 +99,45 @@ place-items: center;
   padding: 3rem;
 } */
 
+/* FOOTER  RODAPÉ */
+
+footer {
+   position: absolute;
+    background-color: #D3D2C7;
+    width: 100%;
+}
+
+footer a  {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
 
 /* ======================== LOGO DAS REDES SOCIAIS ===== */
+.icons {
+  margin: 0 auto;
+ text-align: center;
+  margin: 15px 0;
+}
+
 .logo__facebook {
-  margin-top: 5px;
   width: 25px;
-  margin-right: 1px;
+  position: relative;
+  left: 7px;
 }
 
 .logo__instagram a {
+  display: block;
 margin: 25px;
+margin: 0 auto;
 }
-
 
 .logo__instagram img {
   width: 25px;
   margin-left: 10px;
+  text-align: center;
 }
 
 .linkedin img {
@@ -143,31 +145,45 @@ width: 25px;
 }
 
 .repositorio__github img {
-  width: 25px;
+  width: 25px; 
 }
 /* ======================== LOGO DAS REDES SOCIAIS ===== */
 
 
-
-/* FOOTER  RODAPÉ */
-
-footer {
-  height: 10%;
-  background-color: #D3D2C7;
-}
-
-footer p {
-  text-align: center;
-}
-
 /* =========== MEDIA QUERY (DEIXANDO RESPONSIVO)======== */
 
-@media screen and (max-width: 480px){
-  #conteudo_artigos {
-   display: block;
-}
+@media screen and (max-width: 480px ){
+
+ /* .header {
+   width: 100%;
+ } */
+ .header .container .logo {
+   /* width: 50%; */
+ }
+ .conteudo__esconder .conteudo__item {
+   margin: 12px 27px;
+ }
+ .titulo {
+   margin: 0 27px;
+ }
+
+#conteudo_trajetoria {
+  margin: 1px 9px;
 }
 
- 
+
+#conteudo_artigos {
+  display: block;
+  margin: 0 -11px;
+   padding: 0 45px;
+} footer  img {
+  align-items: center;
+}
+} 
+@media screen and (max-width: 1024px ) {
+  
+}
+
+
 
 

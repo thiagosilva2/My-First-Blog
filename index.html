@@ -20,7 +20,7 @@
           class="logo"
           src="https://jvbusinessonline.com/wp-content/uploads/2019/12/como-criar-um-blog-.png"
           alt=""
-          width="23%"
+          width="100%"
         />
 
         <div class="box-single-captura">
@@ -33,11 +33,11 @@
 
     <main>
       <!-- =================== BOX CAPTURA -->
-      <section id="conteudo_trajetoria">
+      <section class="conteudo__esconder" id="conteudo_trajetoria">
         <h1 class="titulo" onclick="ocultar('esconder')">
           Falando um pouco soubre a minha trajetória
         </h1>
-        <div class="" id="esconder" onclick="ocultar('esconder')">
+        <div class="conteudo__item" id="esconder" onclick="ocultar('esconder')">
           <!-- <button type="submit" id="action">a</button> -->
 
           <p>
@@ -175,50 +175,54 @@
               serviços comigo, abraçaram a ideia de eu abrir a lan, aonde estou
               até hoje.
             </p>
-            <a href="https://www.instagram.com/servicesvereda/"
-              >Instagram Lan</a
-            >
+            <p><span>Instagram da loja</span></p>
+            <a
+              class="logo__instagram"
+              href="https://www.instagram.com/servicesvereda/"
+              target="blank"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"
+                alt="logo telegram"
+            /></a>
           </div>
         </div>
       </section>
     </main>
     <!-- ===================== FOOTER ========= -->
-    <footer>
-      <a href="https://www.facebook.com/thiagoo.silvaa.dev/" target="blank">
-        <img
-          class="logo__facebook"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1200px-Facebook_icon_%28black%29.svg.png"
-          alt="logo facebook"
-      /></a>
-      <a
-        class="logo__instagram"
-        href="https://www.instagram.com/dev.thiago.silva/"
-        target="blank"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"
-          alt="logo telegram"
-      /></a>
-
-      <a
-        class="linkedin"
-        href="https://www.linkedin.com/in/dev-thiago-silva/"
-        target="blank"
-      >
-        <img
-          src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
-          alt="Linkedin"
-      /></a>
-
-      <a
-        class="repositorio__github"
-        href="https://github.com/thiagosilva2"
-        target="blank"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          alt="Repositorio GitHub"
-      /></a>
+    <footer style="margin-top: 2rem">
+      <div class="icons">
+        <a href="https://www.facebook.com/thiagoo.silvaa.dev/" target="blank">
+          <img
+            class="logo__facebook"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1200px-Facebook_icon_%28black%29.svg.png"
+            alt="logo facebook" /></a
+        ><a
+          class="logo__instagram"
+          href="https://www.instagram.com/dev.thiago.silva/"
+          target="blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"
+            alt="logo telegram"
+        /></a>
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/dev-thiago-silva/"
+          target="blank"
+        >
+          <img
+            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+            alt="Linkedin"
+        /></a>
+        <a
+          class="repositorio__github"
+          href="https://github.com/thiagosilva2"
+          target="blank"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="Repositorio GitHub"
+        /></a>
+      </div>
       <p>&copy; Copyright 2021 By Thiago Silva</p>
     </footer>
     <script src="main.js"></script>
