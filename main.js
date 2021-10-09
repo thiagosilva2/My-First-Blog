@@ -8,3 +8,9 @@ function ocultar(id) {
     esconder.style.display = 'block'
   }
 }
+
+function exibir(id) {
+  var esconder = document.getElementById(id)
+
+  esconder.classList.toggle('closed')
+}

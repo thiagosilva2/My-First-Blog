@@ -72,12 +72,18 @@
 
       <section id="conteudo_artigos">
         <!--======= content -->
-        <div class="conteudo__ingles">
-          <h1 class="titulo" onclick="ocultar('inglesa')">
+        <div class="conteudo__ingles closed" id="conteudo__ingles" onclick="exibir('conteudo__ingles')">
+          <h1 class="titulo">
             A importância da lingua inglesa nos dias atuais
           </h1>
-          <div id="inglesa" onclick="ocultar('inglesa')">
+            <figure>
+              <img
+                src="https://catracalivre.com.br/wp-content/uploads/2018/10/estudar-ingles-istock.jpg"
+                alt=""
+              />
+            </figure>
             <br />
+          <div class="content">
             <p>
               No mercado de trabalho, o inglês virou atributo essencial para a
               conquista da maioria das vagas de nível universitário.
@@ -91,12 +97,6 @@
               que tem um segundo idioma é de 30% a mais em relação ao salário de
               outra que tenha apenas um idioma.
             </p>
-            <figure>
-              <img
-                src="https://catracalivre.com.br/wp-content/uploads/2018/10/estudar-ingles-istock.jpg"
-                alt=""
-              />
-            </figure>
 
             <p>
               Com a globalização, muitos brasileiros têm ido ao exterior para
@@ -108,13 +108,20 @@
           </div>
         </div>
 
-        <div class="conteudo_tecnologia">
+        <div class="conteudo_tecnologia closed" id="conteudo_tecnologia" onclick="exibir('conteudo_tecnologia')">
           <!--===========MEIOOOO -->
-          <h1 class="titulo" onclick="ocultar('tecnologia')">
+          <h1 class="titulo">
             A importância da tecnologia no nosso cotidiano
           </h1>
+          <figure>
+            <img
+              class="figure"
+              src="https://abstartups.com.br/wp-content/uploads/2018/10/Qual-a-tecnologia.jpg"
+              alt="um homem com notebook e tablet e com tecnologia 3D encima das suas mãos e dos aparelhos"
+            />
+          </figure>
           <br />
-          <div id="tecnologia" onclick="ocultar('tecnologia')">
+          <div class="content">
             <p>
               O mundo está em constante evolução. Coisas que antes eram
               impossíveis aos nossos olhos, hoje são consideradas comuns no
@@ -125,16 +132,8 @@
               outras mudanças foram possíveis graças à tecnologia e a forma como
               ela avança cada vez mais.
             </p>
-
-            <figure>
-              <img
-                class="figure"
-                src="https://abstartups.com.br/wp-content/uploads/2018/10/Qual-a-tecnologia.jpg"
-                alt="um homem com notebook e tablet e com tecnologia 3D encima das suas mãos e dos aparelhos"
-              />
-            </figure>
             <h2 class="titulo">Impactos gerados pela tecnologia</h2>
-
+  
             <p>
               Essas mudanças impactam também o comportamento do ser humano, que
               tem que aprender a acompanhar essa evolução e conviver com novas
@@ -143,7 +142,7 @@
               conhecimento, simplificação da troca de informações e a quebra de
               várias barreiras da comunicação.
             </p>
-
+  
             <p>
               Outro fator de destaque é a inclusão social. Constantemente surgem
               novas tecnologias que auxiliam na rotina de pessoas com
@@ -154,11 +153,11 @@
           </div>
         </div>
 
-        <div class="conteudo__empresario">
-          <h1 class="titulo" onclick="ocultar('empresario')">
+        <div class="conteudo__empresario" id="conteudo__empresario" onclick="exibir('conteudo__empresario')">
+          <h1 class="titulo">
             De empregado a empresário
           </h1>
-          <div id="empresario" onclick="ocultar('empresario')">
+          <div class="content">
             <br />
             <p>
               Comecei a trabalhar cedo, aos 14 anos de idade, já com pensamentos
