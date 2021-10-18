@@ -8,122 +8,137 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Blog</title>
   </head>
 
   <body>
     <!-- =============== HEADER  -->
     <header class="header">
-      <div class="container">
+      <figure class="header__logo">
         <img
-          class="logo"
+          class="header__img"
           src="https://jvbusinessonline.com/wp-content/uploads/2019/12/como-criar-um-blog-.png"
           alt=""
           width="100%"
         />
-
-        <div class="box-single-captura">
-          <h3>Duvidas sobre o blog</h3>
-          <input type="text" name="" id="" placeholder="envie..." />
-          <button>Envie aqui<i></i></button>
-        </div>
-      </div>
+      </figure>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__links">
+            <a href="#" class="menu__link">Página inicial</a>
+          </li>
+          <li class="menu__links"><a href="#" class="menu__link">Sobre</a></li>
+          <li class="menu__links">
+            <a href="#" class="menu__link">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-      <!-- =================== BOX CAPTURA -->
-      <section class="conteudo__esconder" id="conteudo_trajetoria">
-        <h1 class="titulo" onclick="ocultar('esconder')">
-          Falando um pouco soubre a minha trajetória
-        </h1>
-        <div class="conteudo__item" id="esconder" onclick="ocultar('esconder')">
-          <!-- <button type="submit" id="action">a</button> -->
+    <main class="main">
+      <div class="main__content">
+        <article class="main__post" >
+            
+                      <h1 class="main__title" onclick="ocultar('ocultar_titulo') ">
+              Falando um pouco soubre a minha trajetória
+            </h1>
+            <div class="ocultar_titulo exibir"> 
+            <p class="main__text">
+              Nesse caminho aonde fui adquirindo mais responsabilidades, pois ela
+              já me foi dada aos 14 anos de idade, pude trabalhar meus pensamentos
+              a respeito de crescer e não querer ser só mais uma pessoa sonhadora,
+              além de ter previsto que um dia a loja iria fechar. No ano de 2018
+              resolvi entrar para faculdade de análise e desenvolvimento de
+              sistemas, aonde tive dificuldades no aprendizado, mas fui me
+              dedicando e superando os obtáculos e não satisfeito, resolvi tirar a
+              minha cnh;
+            </p>
+  
+            <p class="main__text">
+              Pois é, o ano de 2019 foi bastante corrido, conciliar trabalho,
+              faculdade, além de ter responsabilidade com a igreja aonde eu fazia
+              escola de líderes, e a auto escola. Confesso que eu achei que não ia
+              dá conta, e mesmo assim ainda resolvi entrar para academia ou seja
+              não tinha tempo para absolutamente nada.
+            </p>
+  
+            <p class="main__text">
+              Chegou 2020, o ano em que conquistei a cnh, o ano que me surpreendeu
+              de uma forma não muito agrádavel, mas que tive que entender sobre
+              ficar desempregado no inicio do ano, tendo que pagar aluguel de
+              casa, internet, entre outras coisas, mas não desisti, junho de 2020
+              eu abrir a minha lojinha, um pouco menor, mas que tem me sustentado
+              com a ajuda de Deus e com os clientes que ele me envia.
+            </p>
+            <div class="main__subtitle">
+              <p class="main__date">01/01/2020</p>
+            </div>
+          </div>
+          
+        </article>
+      </div>
 
-          <p>
-            Nesse caminho aonde fui adquirindo mais responsabilidades, pois ela
-            já me foi dada aos 14 anos de idade, pude trabalhar meus pensamentos
-            a respeito de crescer e não querer ser só mais uma pessoa sonhadora,
-            além de ter previsto que um dia a loja iria fechar. No ano de 2018
-            resolvi entrar para faculdade de análise e desenvolvimento de
-            sistemas, aonde tive dificuldades no aprendizado, mas fui me
-            dedicando e superando os obtáculos e não satisfeito, resolvi tirar a
-            minha cnh;
-          </p>
-
-          <p>
-            Pois é, o ano de 2019 foi bastante corrido, conciliar trabalho,
-            faculdade, além de ter responsabilidade com a igreja aonde eu fazia
-            escola de líderes, e a auto escola. Confesso que eu achei que não ia
-            dá conta, e mesmo assim ainda resolvi entrar para academia ou seja
-            não tinha tempo para absolutamente nada.
-          </p>
-
-          <p>
-            Chegou 2020, o ano em que conquistei a cnh, o ano que me surpreendeu
-            de uma forma não muito agrádavel, mas que tive que entender sobre
-            ficar desempregado no inicio do ano, tendo que pagar aluguel de
-            casa, internet, entre outras coisas, mas não desisti, junho de 2020
-            eu abrir a minha lojinha, um pouco menor, mas que tem me sustentado
-            com a ajuda de Deus e com os clientes que ele me envia.
-          </p>
-        </div>
-      </section>
-
-      <section id="conteudo_artigos">
-        <!--======= content -->
-        <div class="conteudo__ingles closed" id="conteudo__ingles" onclick="exibir('conteudo__ingles')">
-          <h1 class="titulo">
-            A importância da lingua inglesa nos dias atuais
-          </h1>
-            <figure>
+      <section class="section__container">
+        <article class="article__ingles ingles">
+          <h1 class="ingles__title" onclick="ocultar('ingles__content', 'flex') ">A importância do inglês nos dias atuais</h1>
+          
+          <div class="ingles__content">
+            <div class="ingles__cximg2">
               <img
+                class="ingles__img"
                 src="https://catracalivre.com.br/wp-content/uploads/2018/10/estudar-ingles-istock.jpg"
                 alt=""
               />
-            </figure>
-            <br />
-          <div class="content">
-            <p>
-              No mercado de trabalho, o inglês virou atributo essencial para a
-              conquista da maioria das vagas de nível universitário.
-            </p>
-            <p>
-              Quantas vezes você já ouviu alguém dizer: “perdi a oportunidade,
-              pois não sei inglês”. Pois é, mesmo que o candidato não vá
-              utilizar o inglês ou vá utilizar muito pouco em seu novo emprego,
-              somente o fato de saber inglês, já é um diferencial em seu
-              currículo. Pesquisas salariais revelam que o salário de uma pessoa
-              que tem um segundo idioma é de 30% a mais em relação ao salário de
-              outra que tenha apenas um idioma.
-            </p>
-
-            <p>
-              Com a globalização, muitos brasileiros têm ido ao exterior para
-              estudos, negócios e férias. Da mesma forma muitos estrangeiros
-              também têm vindo para o Brasil com as mesmas finalidades. Nestas
-              horas qual a língua mais comum que utilizamos para comunicar-nos
-              com os estrangeiros? O inglês.
-            </p>
-          </div>
-        </div>
-
-        <div class="conteudo_tecnologia closed" id="conteudo_tecnologia" onclick="exibir('conteudo_tecnologia')">
-          <!--===========MEIOOOO -->
-          <h1 class="titulo">
-            A importância da tecnologia no nosso cotidiano
-          </h1>
-          <figure>
-            <img
-              class="figure"
-              src="https://abstartups.com.br/wp-content/uploads/2018/10/Qual-a-tecnologia.jpg"
-              alt="um homem com notebook e tablet e com tecnologia 3D encima das suas mãos e dos aparelhos"
-            />
-          </figure>
-          <br />
-          <div class="content">
-            <p>
-              O mundo está em constante evolução. Coisas que antes eram
+            </div>
+            <div class="ingles__txt">
+              <div class="ocultar__ingles exibir" > 
+                <p class="ingles__p">
+                  No mercado de trabalho, o inglês virou atributo essencial para a
+                  conquista da maioria das vagas de nível universitário.
+                </p>
+                <br />
+                <p class="ingles__p">
+                  Quantas vezes você já ouviu alguém dizer: “perdi a oportunidade,
+                  pois não sei inglês”. Pois é, mesmo que o candidato não vá
+                  utilizar o inglês ou vá utilizar muito pouco em seu novo
+                  emprego, somente o fato de saber inglês, já é um diferencial em
+                  seu currículo. Pesquisas salariais revelam que o salário de uma
+                  pessoa que tem um segundo idioma é de 30% a mais em relação ao
+                  salário de outra que tenha apenas um idioma.
+                </p>
+                <br />
+                <p class="ingles__p">
+                  Com a globalização, muitos brasileiros têm ido ao exterior para
+                  estudos, negócios e férias. Da mesma forma muitos estrangeiros
+                  também têm vindo para o Brasil com as mesmas finalidades. Nestas
+                  horas qual a língua mais comum que utilizamos para comunicar-nos
+                  com os estrangeiros? O inglês.
+                </p>
+              </div>
+            </div>
+          </article>
+  
+                 </div>
+             
+        <section class="section__container">
+          <article
+            class="article__tech tech"
+            
+          >
+            <h1 class="tech__subtitle" onclick="ocultar('tech__conteudo', 'flex')">A importância da tecnologia no nosso cotidiano</h1>
+            <div class="tech__conteudo">
+              <div class="tech__imagem">
+                <img
+                  class="tech__imge"
+                  src="https://abstartups.com.br/wp-content/uploads/2018/10/Qual-a-tecnologia.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tech__txtt">
+                <p class="tech__pa">
+                  O mundo está em constante evolução. Coisas que antes eram
               impossíveis aos nossos olhos, hoje são consideradas comuns no
               nosso cotidiano, e até mesmo indispensáveis. Anos atrás era
               inacreditável imaginar que com um pequeno aparelho em mãos
@@ -131,99 +146,110 @@
               quiséssemos de qualquer lugar do mundo, não é verdade? Essa e
               outras mudanças foram possíveis graças à tecnologia e a forma como
               ela avança cada vez mais.
-            </p>
-            <h2 class="titulo">Impactos gerados pela tecnologia</h2>
-  
-            <p>
-              Essas mudanças impactam também o comportamento do ser humano, que
+                </p>
+                <br />
+                <p class="tech__pa">
+                  Essas mudanças impactam também o comportamento do ser humano, que
               tem que aprender a acompanhar essa evolução e conviver com novas
               tecnologias. Essa adaptação traz consigo uma série de benefícios,
               como melhora na qualidade de vida, acesso rápido e fácil ao
               conhecimento, simplificação da troca de informações e a quebra de
               várias barreiras da comunicação.
-            </p>
-  
-            <p>
-              Outro fator de destaque é a inclusão social. Constantemente surgem
+                </p>
+                <br />
+                <p class="tech__pa">
+                  Outro fator de destaque é a inclusão social. Constantemente surgem
               novas tecnologias que auxiliam na rotina de pessoas com
               deficiências físicas e cognitivas, ajudando que essas pessoas
               tenham mais facilidade para se inserir na sociedade e tenham um
               padrão de vida melhor.
-            </p>
-          </div>
-        </div>
+                </p>
+              </div>
+            </div>
+          </article>
 
-        <div class="conteudo__empresario" id="conteudo__empresario" onclick="exibir('conteudo__empresario')">
-          <h1 class="titulo">
-            De empregado a empresário
-          </h1>
-          <div class="content">
-            <br />
-            <p>
-              Comecei a trabalhar cedo, aos 14 anos de idade, já com pensamentos
-              de ter a minha indepêndencia, sem ter que ficar pedindo dinheiro a
-              minha mãe ou vó, sempre gostei de computadores e tecnologias,
-              quando criança e até mesmo nessa idade, era facinado por máquinas,
-              e nessa mesma época de adolecente fui chamado para trabalhar em
-              uma lan house, aonde pude aprender muitas coisas, fiquei 10 anos
-              nela, e nesse tempo, conseguir conquistar o meu espaço, além de
-              ter conquistado boa parte dos clientes. Houve um momento em que o
-              dono não queria saber mais e resolveu fechar, e eu resolvi abrir a
-              minha própria lan, com o conhecimento que eu tinha sobre o
-              negócio, e já com os clientes que já iam na loja para fazer os
-              serviços comigo, abraçaram a ideia de eu abrir a lan, aonde estou
-              até hoje.
-            </p>
-            <p><span>Instagram da loja</span></p>
-            <a
-              class="logo__instagram"
-              href="https://www.instagram.com/servicesvereda/"
-              target="blank"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"
-                alt="logo telegram"
-            /></a>
-          </div>
-        </div>
-      </section>
-    </main>
+          <section class="section__container">
+            <article class="article__cto cto" >
+              <h1 class="cto__title" onclick="ocultar('cto__content', 'flex')">De empregado a empresário</h1>
+              <div class="cto__content">
+                <div class="cto__cximg2">
+                  <img
+                    class="cto__img"
+                    src="http://marcusmarques.com.br/wp-content/uploads/2017/12/tipos-empresas.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="cto__txt">
+                  <p class="cto__p">
+                    Comecei a trabalhar cedo, aos 14 anos de idade, já com
+                pensamentos de ter a minha indepêndencia, sem ter que ficar
+                pedindo dinheiro a minha mãe ou vó, sempre gostei de
+                computadores e tecnologias, quando criança e até mesmo nessa
+                idade, era facinado por máquinas, e nessa mesma época de
+                adolecente fui chamado para trabalhar em uma lan house, aonde
+                pude aprender muitas coisas, fiquei 10 anos nela, e nesse tempo,
+                conseguir conquistar o meu espaço, além de ter conquistado boa
+                parte dos clientes. Houve um momento em que o dono não queria
+                saber mais e resolveu fechar, e eu resolvi abrir a minha própria
+                lan, com o conhecimento que eu tinha sobre o negócio, e já com
+                os clientes que já iam na loja para fazer os serviços comigo,
+                abraçaram a ideia de eu abrir a lan, aonde estou até hoje.
+                  </p>
+            </div>
+              </div>
+            </article>
+           </main>
     <!-- ===================== FOOTER ========= -->
-    <footer style="margin-top: 2rem">
-      <div class="icons">
-        <a href="https://www.facebook.com/thiagoo.silvaa.dev/" target="blank">
+    <footer class="footer">
+      <div class="footer__content">
+        <a
+          class="footer__link"
+          href="https://www.facebook.com/thiagoo.silvaa.dev/"
+          target="blank"
+        >
           <img
-            class="logo__facebook"
+            class="footer__img"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1200px-Facebook_icon_%28black%29.svg.png"
-            alt="logo facebook" /></a
-        ><a
-          class="logo__instagram"
+            alt="logo facebook"
+        /></a>
+
+        <a
+          class="footer__link"
           href="https://www.instagram.com/dev.thiago.silva/"
           target="blank"
-          ><img
+        >
+          <img
+            class="footer__img"
             src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"
             alt="logo telegram"
         /></a>
+
         <a
-          class="linkedin"
+          class="footer__link"
           href="https://www.linkedin.com/in/dev-thiago-silva/"
           target="blank"
         >
           <img
+            class="footer__img"
             src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
             alt="Linkedin"
         /></a>
+
         <a
-          class="repositorio__github"
+          class="footer__link"
           href="https://github.com/thiagosilva2"
           target="blank"
         >
           <img
+            class="footer__img"
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
             alt="Repositorio GitHub"
         /></a>
       </div>
-      <p>&copy; Copyright 2021 By Thiago Silva</p>
+      <p class="footer__copyright">&copy; Copyright 2021 By Thiago Silva</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="./js/main.js">
+   
+    </script>
   </body>
 </html>

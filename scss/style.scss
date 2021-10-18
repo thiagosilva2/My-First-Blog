@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins&display=swap');
+@font-face {
+  font-family: 'Poppins';
+  src: url('./font/Poppins-Regular.ttf');
+}
+
+// Variaveis cor
+$light-grey: #eaeaeaeb;
+$purple: #9400d3 ;
+$white: #fefefe;
+$dark-grey: #464646 ;
+$c-grey: #817f7f;
+$img-width: 45%;
+
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  background:$white;
+
+  &__logo {
+    text-align: center;
+  }
+  &__img {
+    max-width: 200px;
+  }
+  .menu {
+    &__list {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid $light-grey;
+      border-bottom: 1px solid $light-grey;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 20px 0;
+    }
+    &__links {
+      position: relative; 
+    }
+    &__link {
+      margin: 0 25px;
+      color: $dark-grey;
+      text-decoration: none;
+      &:hover {
+        color: $purple;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center; 
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: $c-grey;
+  &__content {
+    border-top: 1px solid $c-grey;;
+    text-align: center;
+    margin-top: 10px;
+  }
+  &__link {
+      padding: 0 10px;    
+  } &__img {
+    max-width: 25px; 
+    margin-top: 10px;
+} &__copyright {
+  text-align: center;
+  margin: 20px 0;
+}
+}
+
+// ================MAIN
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient($white, $light-grey,  $c-grey);
+
+    &__content {
+      justify-content:center;
+      width: 100%;
+      padding: 40px 8px;
+    }
+    &__post {
+      text-align: center;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 5px 30px;
+    }
+    &__title {
+      font-size: 22px;
+      letter-spacing: 1.5;
+      margin: 0 0 1em;
+      &:hover {
+        text-decoration: underline;
+        color: $purple;
+        cursor: pointer;  
+      }
+    } 
+    &__text {
+      font-size: 16px;
+      padding: 5px 5px;
+      padding: 12px 0;
+      text-align: justify;
+      letter-spacing: 0.5px;
+    }
+    &__subtitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    &__date {
+      margin:  0 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-style: italic;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+}
+
+/*=================CONTEUDO INGLÊS ======*/
+    .ingles{
+    width: 80%;
+    margin: 0 auto 4px;
+    margin-bottom: 3rem;
+    &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; 
+    }
+    &__cximg2 {
+      display: contents;
+      }
+        &__img {
+      width: $img-width;
+      border-radius:10px;
+      opacity: 1;
+      transition: 0.5s;
+      box-shadow: 12px 12px 12px 0 $dark-grey;
+
+      &:hover {
+        background-color: $dark-grey;
+        opacity: 0.3;
+        cursor: pointer;
+      }
+    }
+    // &__container {
+    //   margin: 0; 
+    // }
+    &__title {
+      text-align: center;
+      letter-spacing: 1px;
+      padding: 5px 0 10px 0;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    } 
+    &__txt {
+        width: calc(100% - #{$img-width});
+        align-items: center;
+        margin: 0 16px ;
+        letter-spacing: 0.5px;
+    }
+    &__p {
+      font-size: 16px;
+      padding: 0px 15px;
+      color: $dark-grey;
+      text-align: justify;
+    }
+    
+  }
+  // ==============TECH
+
+ .section__container { 
+  margin: 0; 
+  .tech{
+    width: 80%;
+    margin: 0 auto 4px;
+    &__conteudo {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; 
+    }
+    &__imagem {
+      display: contents;
+      }
+      &__imge {
+        width: $img-width;
+        border-radius:10px;
+        opacity: 1;
+        transition: 0.5s;
+        box-shadow: 12px 12px 12px 0 $dark-grey;
+        &:hover {
+          background-color: $dark-grey;
+          opacity: 0.3;
+          cursor: pointer;
+        }
+      }
+    
+    &__subtitle {
+      text-align: center;
+      letter-spacing: 1px;
+      padding: 5px 0 10px 0;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    } 
+    &__txtt {
+        width: calc(100% - #{$img-width});
+        align-items: center;
+        margin: 0 16px ;
+        letter-spacing: 0.5px;
+    }
+    &__pa {
+      font-size: 16px;
+      padding: 0px 15px;
+      color: $dark-grey;
+      text-align: justify;
+    } 
+  } 
+}
+
+// ===========Empresario
+
+.cto{
+  width: 80%;
+  margin: 0 auto 4px;
+  margin-bottom: 3rem;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+  }
+  &__cximg2 {
+    display: contents;
+ 
+    }
+      &__img {
+      width: $img-width;
+      border-radius:10px;
+      opacity: 1;
+      transition: 0.5s;
+      box-shadow: 12px 12px 12px 0 $dark-grey;
+
+      &:hover {
+        background-color: $dark-grey;
+        opacity: 0.3;
+        cursor: pointer;
+      }
+    }
+  
+  &__title {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px 0 10px 0;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+      font-size: 18px;
+      
+    }
+  } 
+  &__txt {
+      width: calc(100% - #{$img-width});
+      align-items: center;
+      margin: 0 16px ;
+      letter-spacing: 0.5px;
+      
+  }
+  &__p {
+    font-size: 16px;
+    padding: 0px 15px;
+    color: $dark-grey;
+    text-align: justify;
+    &:hover {
+      color: $white;
+      font-size: 17px;
+      transition: 0.6s;
+      opacity: 0.3s;
+    }
+  }
+}
+
+// =========== MEDIA QUERY
+
+@media only screen and (max-width: 992px){
+.header { 
+ .menu__link{
+   margin: 0 17px;
+ }
+}
+.article__ingles , .article__tech, .article__cto {
+      .ingles__content, .tech__conteudo, .cto__content {
+        flex-direction: column;
+   }
+   .cto__img , .tech__imge, .ingles__img {
+     width: 100%;
+     height: auto;
+     margin: 24px 0;
+   }
+   .ingles__txt , .tech__txtt, .cto__txt{
+     width: 100%;
+   }
+   .ingles__p, .tech__txtt, .cto__p {
+     padding: 0;
+   }
+ }
+}
