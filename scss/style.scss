@@ -3,6 +3,8 @@
   font-family: 'Poppins';
   src: url('./font/Poppins-Regular.ttf');
 }
+@import "_header.scss" , "_articles.scss" , "_footer.scss";
+
 
 // Variaveis cor
 $light-grey: #eaeaeaeb;
